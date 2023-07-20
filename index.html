@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="856258.png">
+    <title>Site CEP</title>
+</head>
+<body onload="loading()">
+    <header> 
+        <h1>Verificador de CEP</h1>
+        <img src="856258.png" alt="LOGO PIN">  
+    </header>
+    <div class="box-load">
+        <div class="pre"></div>
+    </div>
+    <div class="content">
+    <section class="funcionalidades">
+    <div class="container">
+            <div class="form-group">
+                <label for="cep"> <strong>CEP</strong>  </label> <small style="font-style: italic; color: rgb(155, 33, 33)">(Campo obrigatório)</small> <br>   
+                <input type="text" class="form-control" id="cep" maxlength="9" placeholder="00000-000">
+            </div>      
+    <br>
+            <div class="form-group">
+                <label for="logradouro"> <strong>Logradouro</strong> </label> <br>   
+                <input type="text" class="form-control" id="logradouro" placeholder="Avenida, Rua, Travessa, etc.">
+            </div>   
+    <br>
+            <div class="form-group">
+                <label for="complemento"> <strong>Complemento</strong> </label> <br>
+                <input type="text" class="form-control" id="complemento" placeholder="Número, ponto de referência">    
+            </div>
+    <br>
+            <div class="form-group">
+                <label for="bairro"> <strong>Bairro</strong> </label> <br>
+                <input type="text" class="form-control" id="bairro" placeholder="Seu bairro"> 
+            </div>
+    <br>
+            <div class="form-group">
+                <label for="localidade"> <strong>Localidade</strong> </label> <br>
+                <input type="text" class="form-control" id="localidade" placeholder="Sua localidade"> 
+            </div>
+    <br>
+            <div class="form-group">
+                <label for="uf"> <strong>UF</strong> </label> <br>
+                <input type="text" class="form-control" id="uf" maxlength="2" placeholder="Estado"> 
+            </div>
+    <br>  
+            <div class="form-group">
+                <label for="ddd"> <strong>DDD</strong> </label> <br>
+                <input type="text" class="form-control" id="ddd" maxlength="2" placeholder="**"> 
+            </div>
+    <br>
+    </section>
+    <br>
+    <input id="verificar" type="submit" name="verificar" value="Verificar">
+    <input id="limpar" type="button" name="limpar" value="Limpar">
+    <footer>
+        <p>&copy; CGG</p>
+    </footer>
+    </div>
+    <script src="script.js"></script>   
+</body>
+</html>

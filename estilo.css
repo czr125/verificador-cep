@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url('gifbck.gif');
+    font-family: Arial, Helvetica, sans-serif;
+    font: normal 15pt;
+    text-align: center;
+}
+
+header {
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px; 
+}
+
+h1 {
+    font-size: 4em;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    background: url('animated.gif');
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text 7.5s linear infinite;
+}
+
+@keyframes text {
+    from { background-position: 0% 50%; }
+    to { background-position: 100% 100%; } 
+}
+
+@keyframes load{
+    to{transform: rotate(360deg)}
+}
+
+.pre {
+    width: 100px;
+    height: 100px;
+    background-image: url("https://ilustracode.com.br/assets/images/load.png");
+    background-position: center;
+    background-size: contain;
+    animation: load 7s infinite linear;
+    margin: auto;
+}
+
+.box-load {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    display: none;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    height: 110px;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 20px; 
+}
+
+::placeholder {
+    font-size: 11px;
+    padding: 2px;
+    opacity: 70%;
+}
+
+section { 
+    background: #d6e4f0;
+    border-radius: 20px;
+    padding: 30px;
+    width: 30%;
+    margin: auto;
+    box-shadow: rgb(31, 30, 30) 13px 13px 10px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+#verificar {
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: rgb(21, 173, 21);
+    height: 50px;
+    width: 80px;
+    box-shadow: black 5px 5px 10px;
+    color: rgb(255, 255, 255);
+    font-size: 12pt;
+}
+
+#limpar {
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: rgb(186, 189, 14);
+    height: 50px;
+    width: 80px;
+    box-shadow: black 5px 5px 10px;
+    color: rgb(255, 255, 255);
+    font-size: 12pt;
+    margin-left: 15px;
+}
+
+input {
+    margin-top: 5px;
+    border-radius: 8px;
+    background: #f8f8ff;   
+    box-shadow: blue 5px 5px 17px;
+    padding: 5px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
